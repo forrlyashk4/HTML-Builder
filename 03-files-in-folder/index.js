@@ -13,9 +13,9 @@ async function readFiles() {
           console.log(
             file.name.split('.')[0],
             '-',
-            data.size,
-            '-',
             file.name.split('.')[1],
+            '-',
+            data.size + 'b',
           ),
         );
       }
