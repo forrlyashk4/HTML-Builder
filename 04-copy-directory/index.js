@@ -1,7 +1,7 @@
 const { mkdir, rm, copyFile, readdir } = require('node:fs/promises');
 const path = require('path');
 
-const src = path.dirname(__filename) + '/files-test';
+const src = path.dirname(__filename) + '/files-copy';
 rm(src, { recursive: true })
   .then(() => {
     mkdir(src, { recursive: true }).then(() => {
